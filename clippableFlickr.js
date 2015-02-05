@@ -26,6 +26,8 @@ window.clippableFlickr = (function(window, document){
     var app = {};
 
     app.init = function(){
+        _loadJQuery();
+        
         $( ".zoom-large" ).css( "border", "3px solid red" );
         
         var iframeHTML = ''
