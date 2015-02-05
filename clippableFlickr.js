@@ -18,14 +18,14 @@ window.clippableFlickr = (function(window, document){
         var customTitle = photoTitle + ' by ' + username + ' on Flickr';
         
         var newHtml = ''
-    		+	'<!DOCTYPE html>'
-    		+	'<html>'
-    		+	'<head>'
+    		//+	'<!DOCTYPE html>'
+    		//+	'<html>'
+    		//+	'<head>'
     
-    		+		'<title>' + customTitle + '</title>'
+    		//+		'<title>' + customTitle + '</title>'
     
-    		+	'</head>'
-    		+	'<body id="body">'
+    		//+	'</head>'
+    		//+	'<body id="body">'
     		+       '<h1>' + customTitle + '</h1>'
     
     		+		'<div id="bodyContent">'
@@ -34,10 +34,11 @@ window.clippableFlickr = (function(window, document){
     		
     		+       '</div>'
 
-    		+	'</body>'
-    		+	'</html>'
+    		//+	'</body>'
+    		//+	'</html>'
     		
-        alert(newHtml);
+        // clear it all out
+        $('body').html(newHtml).attr("bgcolor","#000");
     }
     
     return app;
