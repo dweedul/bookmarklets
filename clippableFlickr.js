@@ -15,7 +15,7 @@ window.clippableFlickr = (function(window, document){
         var photoTitle = $('span.meta-field.photo-title').text();
         
         var imgSrc = '';
-        if (!$bigImg){
+        if (!$('img.zoom-large')){
             imgSrc = $('img.main-photo').attr('src');
         }
         else {
