@@ -24,7 +24,26 @@ window.clippableFlickr = (function(window, document){
     var app = {};
 
     app.init = function(){
-        alert("apples");
+        $( ".zoom-large" ).css( "border", "3px solid red" );
+        
+        var iframeHTML = ''
+    		+	'<!DOCTYPE html>'
+    		+	'<html>'
+    		+	'<head>'
+    
+    		+		'<title>' + title + '</title>'
+    
+    		+	'</head>'
+    		+	'<body id="body">'
+    
+    		+		'<div id="bodyContent">'
+    		
+    		+           
+    		
+    		+       '</div>'
+
+    		+	'</body>'
+    		+	'</html>'
     }
     
     return app;
