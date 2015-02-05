@@ -15,7 +15,7 @@ window.clippableFlickr = (function(window, document){
         var photoTitle = $('span.meta-field.photo-title').text();
         var bigImg = $('img.zoom-large');
         
-        var customTitle = photoTitle+' by '+username+' on Flickr';
+        var customTitle = photoTitle + ' by ' + username + ' on Flickr';
         
         var newHtml = ''
     		+	'<!DOCTYPE html>'
@@ -37,7 +37,7 @@ window.clippableFlickr = (function(window, document){
     		+	'</body>'
     		+	'</html>'
     		
-        alert(newHtml);
+        alert(customTitle);
     }
     
     return app;
