@@ -11,7 +11,7 @@ window.clippableFlickr = (function(window, document){
     var app = {};
 
     app.init = function(){
-        var username = $('a.owner-name.truncate').text();
+        var username = $('a.owner-name.truncate').html();
         var photoTitle = $('span.meta-field.photo-title').text();
         var bigImg = $('img.zoom-large');
         
@@ -37,7 +37,7 @@ window.clippableFlickr = (function(window, document){
     		+	'</body>'
     		+	'</html>'
     		
-        alert(customTitle);
+        alert(newHtml);
     }
     
     return app;
