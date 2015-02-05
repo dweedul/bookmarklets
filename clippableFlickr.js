@@ -13,16 +13,21 @@ window.clippableFlickr = (function(window, document){
     app.init = function(){
         var username = $('a.owner-name.truncate').html();
         var photoTitle = $('span.meta-field.photo-title').text();
-        var bigImgSrc = $('img.zoom-large').attr('src');
         
+        var imgSrc = '';
+        if (!$bigImg){
+            imgSrc = $('img.main-photo').attr('src');
+        }
+        else {
+            imgSrc = $('img.zoom-large').attr('src');
+        }
+
         var customTitle = photoTitle + ' by ' + username + ' on Flickr';
         
         var newBody = ''
-    		+       '<h1>' + customTitle + '</h1>'
-    
     		+		'<div id="bodyContent">'
     		
-    		+           '<img src="' + bigImgSrc + '" />'
+    		+           '<img src="' + imgSrc + '" />'
     		
     		+       '</div>';
     		
