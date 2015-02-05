@@ -21,7 +21,7 @@ window.clippableFlickr = (function(window, document){
         head.appendChild(jQ);
     }
 
-    var init = function(){
+    function init(){
         alert("apples");
     }
     
