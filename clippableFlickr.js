@@ -11,15 +11,13 @@ window.clippableFlickr = (function(window, document){
     var app = {};
 
     app.init = function(){
-        $( ".zoom-large" ).css( "border", "3px solid red" );
-        
         var username = $('a.owner-name.truncate').text();
         var photoTitle = $('span.meta-field.photo-title').text();
         var bigImg = $('img.zoom-large');
         
         var customTitle = photoTitle+' by '+username+' on Flickr';
         
-        var iframeHTML = ''
+        var newHtml = ''
     		+	'<!DOCTYPE html>'
     		+	'<html>'
     		+	'<head>'
@@ -38,6 +36,8 @@ window.clippableFlickr = (function(window, document){
 
     		+	'</body>'
     		+	'</html>'
+    		
+        alert(newHtml);
     }
     
     return app;
