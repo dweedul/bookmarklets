@@ -20,9 +20,13 @@ window.clippableFlickr = (function(window, document){
         };
         head.appendChild(jQ);
     }
+    
+    var app = {};
 
-    function init(){
+    app.init = function(){
         alert("apples");
     }
+    
+    return app;
     
 })(window, window.document);
