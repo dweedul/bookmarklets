@@ -17,28 +17,20 @@ window.clippableFlickr = (function(window, document){
         
         var customTitle = photoTitle + ' by ' + username + ' on Flickr';
         
-        var newHtml = ''
-    		//+	'<!DOCTYPE html>'
-    		//+	'<html>'
-    		//+	'<head>'
-    
-    		//+		'<title>' + customTitle + '</title>'
-    
-    		//+	'</head>'
-    		//+	'<body id="body">'
+        var newBody = ''
     		+       '<h1>' + customTitle + '</h1>'
     
     		+		'<div id="bodyContent">'
     		
     		+           '<img src="' + bigImgSrc + '" />'
     		
-    		+       '</div>'
-
-    		//+	'</body>'
-    		//+	'</html>'
+    		+       '</div>';
     		
-        // clear it all out
-        $('body').html(newHtml).attr("bgcolor","#000");
+        // replace the old body with new one.
+        $('body').html(newBody).attr("bgcolor","#000");
+        
+        // replace the title
+        $(document).prop('title', customTitle);
     }
     
     return app;
