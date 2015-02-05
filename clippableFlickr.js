@@ -21,5 +21,6 @@ window.clippableFlickr = (function(window, document){
         head.appendChild(jQ);
     }
 
+    alert('bananas');
     
 })(window, window.document);
