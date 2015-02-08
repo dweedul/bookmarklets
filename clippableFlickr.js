@@ -32,7 +32,7 @@ window.clippableFlickr = (function(window, document){
     		+       '</div>';
     		
         // replace the old body with new one.
-        $('body').html(newBody).attr("bgcolor","#FFF");
+        $('body').html(newBody).attr("bgcolor","#FFF").css({"display":"block","margin":"0 auto"});
         
         // replace the title
         $(document).prop('title', customTitle);
