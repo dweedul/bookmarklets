@@ -25,7 +25,7 @@ javascript: (function() {
             }
             scriptNamespace = {};
             
-            loadScript(scriptUrl, scriptNamespace.init();)
+            loadScript(scriptUrl, scriptNamespace.init());
         });
     };
 
