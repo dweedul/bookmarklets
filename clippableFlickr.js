@@ -25,11 +25,11 @@ window.clippableFlickr = (function(window, document){
         var customTitle = photoTitle + ' by ' + username + ' on Flickr';
         
         var newBody = ''
-    		+		'<div id="bodyContent">'
+    		+  '<div id="bodyContent">'
     		
-    		+           '<img src="' + imgSrc + '" />'
+    		+    '<img src="' + imgSrc + '" />'
     		
-    		+       '</div>';
+    		+  '</div>';
     		
         // replace the old body with new one.
         $('body').html(newBody).attr("bgcolor","#FFF").css({"display":"block","margin":"0 auto"});
