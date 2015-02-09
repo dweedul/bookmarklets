@@ -1,5 +1,5 @@
 javascript: (function() {
-    var jQueryUrl = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'
+    var jQueryUrl = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js';
     var scriptUrl = 'https://dweedul.github.io/bookmarklets/clippableFlickr.js?r=' + Math.random();
     var scriptNamespace = window.clippableFlickr;
     
